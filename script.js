@@ -15,6 +15,9 @@ const lbl4 = document.querySelector("#radio-2");
 const sel1 = document.querySelector(".sel-1");
 const para2 = document.querySelector(".para-2");
 
+const rng1 = document.querySelector("#range");
+const lbl5 = document.querySelector("#rng-1");
+
 btn1.addEventListener("click", () => {
     if (btn1.innerText === "Reset") {
         para1.innerText = "This is a test";
@@ -91,7 +94,16 @@ sel1.addEventListener("change", () =>{
     }
 })
 
-console.log(sel1[0].value);
-console.log(sel1[1].value);
-console.log(sel1[2].value);
-console.log(sel1[3].value);
+rng1.addEventListener("change", () => {
+    console.log(rng1.value);
+    lbl5.style.color = "green";
+    lbl5.innerText = "Range:";
+    lbl5.innerText += ` ${rng1.value}`;
+    if (rng1.value === "0") {
+        lbl5.style.color = "snow";
+        lbl5.innerText = "Range: 0-255"
+    }
+})
+
+console.log(rng1.value)
+console.log(lbl5.innerText)

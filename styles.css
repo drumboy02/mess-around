@@ -65,7 +65,7 @@ body {
     justify-content: space-around;
 }
 
-.div-2-1, .div-2-2 {
+.div-2-1, .div-2-2, .div-2-3 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -93,4 +93,17 @@ body {
 
 .sel-1:hover {
     cursor: pointer;
+}
+
+#range {
+    width: 100px;
+}
+
+#range:hover {
+    cursor: pointer;
+}
+
+#rng-1 {
+    color: snow;
+    font-size: 18px;
 }
